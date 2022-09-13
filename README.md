@@ -12,13 +12,13 @@
 - react
 - CSS
 - npm
-- 
+
 
 
 
   ## Live Demo
 
-- Live demo link: [Portfolio] 
+- Live demo link: [] 
 
 
 ## Getting Started
