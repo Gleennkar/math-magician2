@@ -32,7 +32,7 @@ To get a local copy up and running follow these simple example steps.
 - Chrome browser
 
 ### Setup
-- git clone https://github.com/Gleennkar/My-first-Porfolio.git
+- git clone https: https://github.com/Gleennkar/math-magician2
 - open with live server
 
 
