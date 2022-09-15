@@ -1,4 +1,4 @@
-import Calculator from './Calculator.js';
-import './Calculator.css';
+import Calculator from './components/Calculator.js';
+import './components/Calculator.css';
 
 export default App;
