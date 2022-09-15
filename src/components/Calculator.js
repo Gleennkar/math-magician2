@@ -1,7 +1,7 @@
 import './Calculator.css';
 import React from 'react';
 
-class Calculator extends React.PureComponent {
+export default class Calculator extends React.PureComponent {
   render() {
     return (
       <div className="calculator-grid">
