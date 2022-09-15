@@ -1,4 +1,11 @@
-import Calculator from './components/Calculator.js';
+import React from 'react';
+import Calculator from './components/Calculator';
 import './components/Calculator.css';
+
+const App = () => (
+  <>
+    <Calculator />
+  </>
+);
 
 export default App;

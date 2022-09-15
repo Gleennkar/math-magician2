@@ -20,16 +20,18 @@ body {
   justify-content: center;
   align-content: center;
   min-height: 100vh;
-  grid-template-columns: repeat(4, 100px);
-  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  grid-template-columns: repeat(4, 114px);
+  grid-template-rows: minmax(73px, auto) repeat(5, 56px);
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 .calculator-grid > button {
   cursor: pointer;
   font-size: 2rem;
-  border: 1px solid white;
+  border: 1px solid #00000021;
   outline: none;
-  background: gray;
+  background: #80808038;
   opacity: 0.7;
 }
 
@@ -44,14 +46,20 @@ body {
 
 .output {
   grid-column: 1 / -1;
-  background-color: gray;
+  background: #808080d9;
+  opacity: 0.9;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   word-wrap: break-word;
   word-break: break-all;
+  justify-content: end;
 }
 
 .output .operand {
   color: white;
   font-size: 2rem;
+}
+
+.calculator-grid > .symbol {
+  background-color: orange;
 }
