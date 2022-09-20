@@ -1,14 +1,12 @@
 import './Calculator.css';
 import React from 'react';
-// import './calculate.js';
-// import './operate.js';
 import calculate from '../logic/calculate';
 
 export default class Calculator extends React.PureComponent {
   constructor(props) {
     super(props);
-    this.state = {};
-    this.handleClick = this.handleclick.bind(this);
+    this.state = { total: '', next: '', operation: '' };
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(event) {
@@ -16,14 +14,13 @@ export default class Calculator extends React.PureComponent {
   }
 
   render() {
-    const { next, toatal } = this.state; // eslint-disable-line
+    const { next, total } = this.state;
     return (
       <>
-
         <div className="calculator-grid">
           <div className="output">
-            <span className="result">{next || total || 0}</span>
-            <div className="operand">0</div>
+            {/* <span className="result">{next || total || 0}</span> */}
+            <div className="operand">{next || total || 0}</div>
           </div>
           <button type="button" className="button" onClick={this.handleClick}>AC</button>
           <button type="button" className="button" onClick={this.handleClick}>+/-</button>
@@ -44,9 +41,7 @@ export default class Calculator extends React.PureComponent {
           <button type="button" className="span-two" onClick={this.handleClick}>0</button>
           <button type="button" className="button" onClick={this.handleClick}>.</button>
           <button type="button" className="symbol active" onClick={this.handleClick}>=</button>
-
         </div>
-
       </>
     );
   }
